@@ -8,7 +8,7 @@ class DinoPlayer extends SpriteComponent with HasGameRef {
   @override
   FutureOr<void> onLoad() async {
     super.onLoad();
-    sprite = await gameRef.loadSprite('lib/assets/images/dino_sprite.png');
+    sprite = await gameRef.loadSprite('dino_sprites.png');
     position = gameRef.size / 2;
   }
 }
